@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación de monitoreo de actividad de seguridad">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="gestion.css">
+    <link rel="shortcut icon" href="../assets/images/h.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="https://assets.soyhenry.com/logos/LOGO-HENRY-04.png" alt="Henry-Logo" width="150" height="60">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="contrasena.html" target="_blank">Generar Contraseña</a></li>
+                <li><a href="cajaFuerte.html" target="_blank">Caja Fuerte</a></li>
+                <li><a href="monitoreo.html" target="_blank">Monitoreo de actividad</a></li>
+                <li><a href="#">Gestión de usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h1>Asistente De Seguridad</h1>
+            <p>Gestión de Perfiles</p>
+        </section>
+        <section class="gestion">
+            <form id="perfiles">
+                <label for="perfiles">Ver Perfiles</label>
+                <input type="text" id="perfiles" name="perfiles" required>
+                <button type="submit">Ver</button>
+            </form>
+            <div>
+                <p>Ver Perfiles Por Antigüedad</p>
+                <button type="submit">Ver</button>
+            </div>
+            <div>
+                <p>Ver Administradores</p>
+                <button type="submit">Ver</button>
+            </div>
+            <form id="modificar">
+                <p>Modificar Acceso</p>
+                <div>
+                    <label for="modificar">Usuario</label>
+                    <input type="text" id="modificar" name="modificar" required>
+                </div>
+                <div>
+                    <label for="nuevoAcceso">Nuevo Código de Acceso</label>
+                    <input type="text" id="nuevoAcceso" name="nuevoAcceso" required>
+                </div>
+                <button type="submit">Actualizar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

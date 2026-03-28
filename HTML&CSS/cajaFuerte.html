@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación de gestión de contraseñas y seguridad">
+    <title>Caja Fuerte</title>
+    <link rel="stylesheet" href="cajaFuerte.css">
+    <link rel="shortcut icon" href="../assets/images/h.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="https://assets.soyhenry.com/logos/LOGO-HENRY-04.png" alt="Henry-Logo" width="150" height="60">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="contrasena.html" target="_blank">Generar Contraseña</a></li>
+                <li><a href="#">Caja Fuerte</a></li>
+                <li><a href="monitoreo.html" target="_blank">Monitoreo de actividad</a></li>
+                <li><a href="gestion.html" target="_blank">Gestión de usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h1>Asistente De Seguridad</h1>
+            <p>Caja Fuerte</p>
+        </section>
+        <section class="codigos">
+            <div class="form-save">
+                <form id="guardar">
+                    <div>
+                        <label for="secreto">Código Secreto</label>
+                        <input type="text" id="secreto" name="secreto" required>
+                    </div>
+                    <div>
+                        <label for="intentos">Cantidad de intentos</label>
+                        <input type="number" id="intentos" name="intentos" min="1" max="10" required>
+                    </div>
+                    <button type="submit">Guardar</button>
+                </form>
+            </div>
+            <div class="form-validate">
+                <form id="validar">
+                    <label for="codigo">Validar Código Secreto</label>
+                    <input type="text" id="codigo" name="codigo" required>
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="submit">Validar Código</button>
+                <button type="reset">Reset</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
